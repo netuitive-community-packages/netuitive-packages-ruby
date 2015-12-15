@@ -1,0 +1,45 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "ACE",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Ruby",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : null,
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : "action_controller.*.request.total_duration",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "action_controller.*.total_requests",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "action_controller.netuitive.requestspersec",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "active_record.instantiation",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "active_record.sql.statement",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    } ]
+  }
+}

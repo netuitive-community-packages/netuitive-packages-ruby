@@ -1,0 +1,36 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "COMPUTED_METRIC",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Ruby",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "Ruby",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : "action_controller.netuitive.requestspersec",
+      "properties" : {
+        "expression" : "data['action_controller.total_requests'].actual / data['netuitive.collection_interval'].actual",
+        "fqn" : "action_controller.netuitive.requestspersec",
+        "name" : "Controller requests per second"
+      }
+    }, {
+      "match" : "active_record.netuitive.sql.statementspersec",
+      "properties" : {
+        "expression" : "data['active_record.sql.statement'].actual / data['netuitive.collection_interval'].actual",
+        "fqn" : "active_record.netuitive.sql.statementspersec",
+        "name" : "Active Record SQL statements per second"
+      }
+    }, {
+      "match" : "active_record.netuitive.instantiation.statementspersec",
+      "properties" : {
+        "expression" : "data['active_record.instantiation'].actual / data['netuitive.collection_interval'].actual",
+        "fqn" : "active_record.netuitive.instantiation.statementspersec",
+        "name" : "Active Record instantiations per second"
+      }
+    } ]
+  }
+}

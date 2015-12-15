@@ -1,0 +1,29 @@
+{
+  "policy" : {
+    "id" : null,
+    "name" : "Active Record Instantiations",
+    "description" : null,
+    "scope" : {
+      "elementName" : "",
+      "elementType" : "Ruby",
+      "elementTags" : { }
+    },
+    "duration" : 300,
+    "conditions" : [ {
+      "metric" : "active_record.instantiation",
+      "wildcard" : null,
+      "analytic" : "contextualDeviation",
+      "operator" : ">",
+      "level" : null
+    } ],
+    "actions" : [ {
+      "type" : "event",
+      "category" : 1
+    } ],
+    "enabled" : true,
+    "deleted" : false,
+    "originTenantId" : null,
+    "originPolicyId" : null,
+    "lastUpdated" : null
+  }
+}
