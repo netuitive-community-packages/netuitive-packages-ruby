@@ -53,5 +53,12 @@
       "encoding" : "application/json",
       "content" : null
     }
+  } ],
+  "dashboards" : [ {
+    "data" : {
+      "file" : "dashboards/ruby.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
   } ]
 }
