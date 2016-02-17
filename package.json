@@ -31,12 +31,6 @@
     }
   }, {
     "data" : {
-      "file" : "analyticConfigurations/computed_metric-ruby.json",
-      "encoding" : "application/json",
-      "content" : null
-    }
-  }, {
-    "data" : {
       "file" : "analyticConfigurations/metric_meta-ruby.json",
       "encoding" : "application/json",
       "content" : null
