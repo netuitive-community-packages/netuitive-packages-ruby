@@ -1,9 +1,9 @@
 {
-  "id" : "netuitive.packages.ruby.on.rails",
+  "id" : "netuitive.packages.ruby",
   "version" : "1.0.0",
   "manifest" : {
-    "name" : "Netuitive Packages Ruby on Rails",
-    "description" : "A set of Netuitive analytics configurations, polices, dashboards and reports that are used to monitor  Ruby on Rails performance",
+    "name" : "Netuitive Packages Ruby",
+    "description" : "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of Ruby applications.",
     "author" : {
       "name" : "Netuitive Research",
       "email" : "research@netuitive.com"
@@ -18,25 +18,7 @@
   },
   "policies" : [ {
     "data" : {
-      "file" : "policies/netuitive.collected.metrics.json",
-      "encoding" : "application/json",
-      "content" : null
-    }
-  }, {
-    "data" : {
-      "file" : "policies/active.record.instantiations.json",
-      "encoding" : "application/json",
-      "content" : null
-    }
-  }, {
-    "data" : {
-      "file" : "policies/controller.total.duration.json",
-      "encoding" : "application/json",
-      "content" : null
-    }
-  }, {
-    "data" : {
-      "file" : "policies/active.record.sql.statements.json",
+      "file" : "policies/ruby.-.elevated.action.duration.json",
       "encoding" : "application/json",
       "content" : null
     }
@@ -50,6 +32,12 @@
   }, {
     "data" : {
       "file" : "analyticConfigurations/computed_metric-ruby.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-ruby.json",
       "encoding" : "application/json",
       "content" : null
     }

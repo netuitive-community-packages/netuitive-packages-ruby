@@ -7,23 +7,17 @@
     "name" : "Ruby",
     "scope" : {
       "elementName" : null,
-      "elementType" : null,
+      "elementType" : "RUBY",
       "elementTags" : null
     },
     "metrics" : [ {
-      "match" : "action_controller.*.request.total_duration",
+      "match" : "action_controller\\..*\\..*\\.request.total_duration",
       "properties" : {
         "baseline" : true,
         "correlation" : true
       }
     }, {
-      "match" : "action_controller.*.total_requests",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "action_controller.netuitive.requestspersec",
+      "match" : "action_controller\\..*\\..*\\.total_requests",
       "properties" : {
         "baseline" : true,
         "correlation" : true
@@ -39,6 +33,24 @@
       "properties" : {
         "baseline" : true,
         "correlation" : true
+      }
+    }, {
+      "match" : "action_controller.redirect",
+      "properties" : {
+        "baseline" : false,
+        "correlation" : false
+      }
+    }, {
+      "match" : "action_controller.halted_callback",
+      "properties" : {
+        "baseline" : false,
+        "correlation" : false
+      }
+    }, {
+      "match" : "ObjectSpace.count_objects\\..*",
+      "properties" : {
+        "baseline" : false,
+        "correlation" : false
       }
     } ]
   }

@@ -1,0 +1,35 @@
+{
+  "policy" : {
+    "id" : null,
+    "name" : "Ruby - Elevated Action Duration",
+    "description" : "This policy will trigger a WARNING if the \"total_duration\" metric on any action of any controller experiences both a Baseline and a Contextual deviation for 30 minutes.",
+    "scope" : {
+      "elementName" : "",
+      "elementType" : "Ruby",
+      "elementTags" : { }
+    },
+    "duration" : 1800,
+    "conditions" : [ {
+      "metric" : "",
+      "wildcard" : "action_controller.*.*.request.total_duration",
+      "analytic" : "baselineDeviation",
+      "operator" : ">",
+      "level" : null
+    }, {
+      "metric" : "",
+      "wildcard" : "action_controller.*.*.request.total_duration",
+      "analytic" : "contextualDeviation",
+      "operator" : ">",
+      "level" : null
+    } ],
+    "actions" : [ {
+      "type" : "event",
+      "category" : 2
+    } ],
+    "enabled" : true,
+    "deleted" : false,
+    "originTenantId" : null,
+    "originPolicyId" : null,
+    "lastUpdated" : null
+  }
+}
