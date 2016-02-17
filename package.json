@@ -44,7 +44,7 @@
   } ],
   "dashboards" : [ {
     "data" : {
-      "file" : "dashboards/ruby.json",
+      "file" : "dashboards/ruby.summary.json",
       "encoding" : "application/json",
       "content" : null
     }
