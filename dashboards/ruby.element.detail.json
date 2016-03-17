@@ -222,7 +222,7 @@
       "created" : "2016-03-15T17:36:04Z",
       "updated" : "2016-03-15T18:03:12Z"
     } ],
-    "type" : "Ruby",
+    "type" : "RUBY",
     "private" : false
   }
 }
