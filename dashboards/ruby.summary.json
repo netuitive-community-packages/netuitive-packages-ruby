@@ -27,10 +27,9 @@
         "selectedAttributes" : "[]",
         "width" : "auto",
         "useElementNameContains" : "true",
-        "metrics" : "[{\"fqn\":\"active_record.sql.statement\"}]",
+        "metrics" : "[{\"fqn\":\"active_record.sql.statement\",\"aggFns\":[]}]",
         "metricLimit" : "10",
         "elementScopeTypes" : "[\"Ruby\"]",
-        "elementType__delete" : "Ruby",
         "selectedTab" : "table"
       },
       "dashboardId" : null,
@@ -43,21 +42,19 @@
       "description" : null,
       "widgetType" : "multi-metric-time-series",
       "properties" : {
-        "elementName__delete" : null,
         "showElementTotal" : "true",
         "selectedAttributes" : "[]",
         "useElementNameContains" : "true",
         "element_id" : null,
         "metricLimit" : "10",
         "elementScopeTypes" : "[\"Ruby\"]",
-        "elementType__delete" : "Ruby",
         "metricUnit" : null,
         "groupName" : null,
         "showHighest" : "true",
         "elementNameContains" : null,
         "metric_fqn" : null,
         "width" : "medium",
-        "metrics" : "[{\"fqn\":\"action_controller.total_requests\"}]",
+        "metrics" : "[{\"fqn\":\"action_controller.total_requests\",\"aggFns\":[]}]",
         "selectedTab" : "table"
       },
       "dashboardId" : null,
@@ -75,10 +72,9 @@
         "selectedAttributes" : "[]",
         "width" : "auto",
         "useElementNameContains" : "true",
-        "metrics" : "[{\"fqn\":\"ObjectSpace.count_objects.FREE\"},{\"fqn\":\"ObjectSpace.count_objects.T_ARRAY\"},{\"fqn\":\"ObjectSpace.count_objects.T_BIGNUM\"},{\"fqn\":\"ObjectSpace.count_objects.T_CLASS\"},{\"fqn\":\"ObjectSpace.count_objects.T_COMPLEX\"},{\"fqn\":\"ObjectSpace.count_objects.T_DATA\"},{\"fqn\":\"ObjectSpace.count_objects.T_FILE\"},{\"fqn\":\"ObjectSpace.count_objects.T_FLOAT\"},{\"fqn\":\"ObjectSpace.count_objects.T_HASH\"},{\"fqn\":\"ObjectSpace.count_objects.T_ICLASS\"},{\"fqn\":\"ObjectSpace.count_objects.T_MATCH\"},{\"fqn\":\"ObjectSpace.count_objects.T_MODULE\"},{\"fqn\":\"ObjectSpace.count_objects.T_NODE\"},{\"fqn\":\"ObjectSpace.count_objects.T_OBJECT\"},{\"fqn\":\"ObjectSpace.count_objects.T_RATIONAL\"},{\"fqn\":\"ObjectSpace.count_objects.T_REGEXP\"},{\"fqn\":\"ObjectSpace.count_objects.T_STRING\"},{\"fqn\":\"ObjectSpace.count_objects.T_STRUCT\"},{\"fqn\":\"ObjectSpace.count_objects.T_SYMBOL\"},{\"fqn\":\"ObjectSpace.count_objects.TOTAL\"}]",
         "metricLimit" : "10",
         "elementScopeTypes" : "[\"Ruby\"]",
-        "elementType__delete" : "Ruby",
+        "metrics" : "[{\"fqn\":\"ObjectSpace.count_objects.FREE\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_ARRAY\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_BIGNUM\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_CLASS\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_COMPLEX\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_DATA\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_FILE\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_FLOAT\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_HASH\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_ICLASS\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_MATCH\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_MODULE\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_NODE\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_OBJECT\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_RATIONAL\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_REGEXP\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_STRING\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_STRUCT\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.T_SYMBOL\",\"aggFns\":[]},{\"fqn\":\"ObjectSpace.count_objects.TOTAL\",\"aggFns\":[]}]",
         "selectedTab" : "table"
       },
       "dashboardId" : null,
@@ -91,14 +87,12 @@
       "description" : null,
       "widgetType" : "event-ticker",
       "properties" : {
-        "elementName__delete" : null,
         "showElementTotal" : "true",
         "selectedAttributes" : "[]",
         "useElementNameContains" : "true",
         "element_id" : null,
         "metricLimit" : "10",
         "elementScopeTypes" : "[\"Ruby\"]",
-        "elementType__delete" : "Ruby",
         "metricUnit" : null,
         "groupName" : null,
         "showHighest" : "true",
@@ -113,6 +107,7 @@
       "created" : "2016-02-17T02:54:02Z",
       "updated" : "2016-02-17T02:54:08Z"
     } ],
+    "type" : "DEFAULT",
     "private" : false
   }
 }

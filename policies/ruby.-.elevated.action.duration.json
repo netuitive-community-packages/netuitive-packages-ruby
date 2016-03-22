@@ -14,13 +14,19 @@
       "wildcard" : "action_controller.*.*.request.total_duration",
       "analytic" : "baselineDeviation",
       "operator" : ">",
-      "level" : null
+      "level" : null,
+      "level2" : null,
+      "metricThresholdLevel" : null,
+      "metricThresholdAnalytic" : null
     }, {
       "metric" : "",
       "wildcard" : "action_controller.*.*.request.total_duration",
       "analytic" : "contextualDeviation",
       "operator" : ">",
-      "level" : null
+      "level" : null,
+      "level2" : null,
+      "metricThresholdLevel" : null,
+      "metricThresholdAnalytic" : null
     } ],
     "actions" : [ {
       "type" : "event",
