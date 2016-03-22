@@ -40,6 +40,13 @@
       "properties" : {
         "STATISTIC" : "sum"
       }
+    }, {
+      "match" : "action_controller\\..*\\.request\\..*",
+      "properties" : {
+        "tags" : {
+          "unit" : "ms"
+        }
+      }
     } ]
   }
 }

@@ -5,6 +5,7 @@
 ###Version 1.1.0
 
 * Added Ruby-specific element detail page.
+* Defined units for the metrics.
 
 ###Version 1.0.0
 
