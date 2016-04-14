@@ -11,13 +11,13 @@
       "elementTags" : null
     },
     "metrics" : [ {
-      "match" : "action_controller\\..*\\..*\\.request.total_duration",
+      "match" : "netuitive.ruby.action_controller.*.total_duration",
       "properties" : {
         "baseline" : true,
         "correlation" : true
       }
     }, {
-      "match" : "action_controller\\..*\\..*\\.total_requests",
+      "match" : "action_controller\\..*Controller\\.total_requests",
       "properties" : {
         "baseline" : true,
         "correlation" : true

@@ -1,8 +1,13 @@
-#netuitive.packages.ruby 1.1.0
+#netuitive.packages.ruby 1.2.0
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_ruby_datasource.htm).
 
 ##Release History
+
+###Version 1.2.0
+
+* Reduced number of correlated metrics.
+* Added new computed metrics to measure total time spent in each controller.
 
 ###Version 1.1.0
 
