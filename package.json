@@ -1,6 +1,6 @@
 {
   "id" : "netuitive.packages.ruby",
-  "version" : "1.1.0",
+  "version" : "1.2.0",
   "manifest" : {
     "name" : "Netuitive Packages Ruby",
     "description" : "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of Ruby applications.",
@@ -26,6 +26,12 @@
   "analyticConfigurations" : [ {
     "data" : {
       "file" : "analyticConfigurations/ace-ruby.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/computed_metric-ruby.json",
       "encoding" : "application/json",
       "content" : null
     }

@@ -1,0 +1,23 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "COMPUTED_METRIC",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Ruby",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "RUBY",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : "netuitive.ruby.action_controller.total_duration",
+      "properties" : {
+        "expression" : "data.sum('action_controller.${1}.*.request.total_duration')",
+        "for" : "action_controller.(.*)Controller.total_requests",
+        "fqn" : "netuitive.ruby.action_controller.${1}Controller.total_duration",
+        "name" : "Controller Total Duration"
+      }
+    } ]
+  }
+}
