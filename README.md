@@ -1,6 +1,6 @@
 #netuitive.packages.ruby 1.2.2
 
-For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_ruby_datasource.htm).
+For detailed information on this package, please refer to the [online documentation](https://help.netuitive.com/Content/Integrations/ruby.htm).
 
 ##Release History
 
