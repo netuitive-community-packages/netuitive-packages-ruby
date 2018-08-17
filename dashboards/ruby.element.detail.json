@@ -1,194 +1,117 @@
 {
-  "dashboard" : {
-    "name" : "Ruby Element Detail",
-    "description" : null,
-    "layout" : null,
-    "properties" : {
-      "integrationType" : null,
-      "timeRangeDuration" : "604800",
-      "gridstackContents" : "[{\"id\":\"65f801f7-7cc1-4de7-8240-7f20369ce8b7\",\"x\":0,\"y\":27,\"width\":12,\"height\":9},{\"id\":\"adde5aef-1094-4326-a90b-999a36abdf4b\",\"x\":6,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"eea3a19d-1462-42b0-880c-6e47f8cabd39\",\"x\":6,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"ef00258d-3214-4732-aed9-bb4bf84cd8b3\",\"x\":0,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"98ffa3ea-2318-4180-b516-d550064aa808\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"37f661e0-1c72-49e8-8e31-1fad6b2074e8\",\"x\":6,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"9c06ac41-01c4-494b-b7b9-7837c7d18aad\",\"x\":0,\"y\":9,\"width\":6,\"height\":9}]",
-      "refreshIntervalSeconds" : "300",
-      "wrap" : "true"
+  "dashboard": {
+    "name": "Ruby Element Detail",
+    "private": false,
+    "properties": {
+      "gridstackContents": "[{\"id\":\"65f801f7-7cc1-4de7-8240-7f20369ce8b7\",\"x\":0,\"y\":27,\"width\":12,\"height\":9},{\"id\":\"adde5aef-1094-4326-a90b-999a36abdf4b\",\"x\":6,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"eea3a19d-1462-42b0-880c-6e47f8cabd39\",\"x\":6,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"ef00258d-3214-4732-aed9-bb4bf84cd8b3\",\"x\":0,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"98ffa3ea-2318-4180-b516-d550064aa808\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"37f661e0-1c72-49e8-8e31-1fad6b2074e8\",\"x\":6,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"9c06ac41-01c4-494b-b7b9-7837c7d18aad\",\"x\":0,\"y\":9,\"width\":6,\"height\":9}]",
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "604800",
+      "wrap": "true"
     },
-    "widgets" : [ {
-      "id" : "65f801f7-7cc1-4de7-8240-7f20369ce8b7",
-      "name" : "Events",
-      "description" : null,
-      "widgetType" : "event-ticker",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "false",
-        "element_id" : null,
-        "elementScopeTypes" : "[\"Ruby\"]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "false",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : "",
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "metricScopeTags" : "[]",
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
+    "type": "RUBY",
+    "widgets": [
+      {
+        "id": "65f801f7-7cc1-4de7-8240-7f20369ce8b7",
+        "name": "Events",
+        "properties": {
+          "elementScopeTypes": "[\"Ruby\"]",
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "false",
+          "useAllMetricScopeTags": "false",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "event-ticker"
+      },
+      {
+        "id": "adde5aef-1094-4326-a90b-999a36abdf4b",
+        "name": "Active Record - Instantiation",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "active_record.instantiation",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "eea3a19d-1462-42b0-880c-6e47f8cabd39",
+        "name": "Tags",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "element-tags"
+      },
+      {
+        "id": "ef00258d-3214-4732-aed9-bb4bf84cd8b3",
+        "name": "Attributes",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "element-attributes"
+      },
+      {
+        "id": "98ffa3ea-2318-4180-b516-d550064aa808",
+        "name": "Current Request Count",
+        "properties": {
+          "metricLimit": "10",
+          "metric_fqn": "action_controller.total_requests",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "visualization": "gauge",
+          "width": "auto"
+        },
+        "widgetType": "metric-status"
+      },
+      {
+        "id": "37f661e0-1c72-49e8-8e31-1fad6b2074e8",
+        "name": "Request Count Over Time",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "action_controller.total_requests",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
+      },
+      {
+        "id": "9c06ac41-01c4-494b-b7b9-7837c7d18aad",
+        "name": "Active Record - SQL Statements",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "active_record.sql.statement",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "metric-time-series"
       }
-    }, {
-      "id" : "adde5aef-1094-4326-a90b-999a36abdf4b",
-      "name" : "Active Record - Instantiation",
-      "description" : null,
-      "widgetType" : "metric-time-series",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[\"avg\"]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : "active_record.instantiation",
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "eea3a19d-1462-42b0-880c-6e47f8cabd39",
-      "name" : "Tags",
-      "description" : null,
-      "widgetType" : "element-tags",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "ef00258d-3214-4732-aed9-bb4bf84cd8b3",
-      "name" : "Attributes",
-      "description" : null,
-      "widgetType" : "element-attributes",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "98ffa3ea-2318-4180-b516-d550064aa808",
-      "name" : "Current Request Count",
-      "description" : null,
-      "widgetType" : "metric-status",
-      "properties" : {
-        "visualization" : "gauge",
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metric_fqn" : "action_controller.total_requests",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "37f661e0-1c72-49e8-8e31-1fad6b2074e8",
-      "name" : "Request Count Over Time",
-      "description" : null,
-      "widgetType" : "metric-time-series",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[\"avg\"]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : "action_controller.total_requests",
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "9c06ac41-01c4-494b-b7b9-7837c7d18aad",
-      "name" : "Active Record - SQL Statements",
-      "description" : null,
-      "widgetType" : "metric-time-series",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[\"avg\"]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : "active_record.sql.statement",
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    } ],
-    "type" : "RUBY",
-    "private" : false
+    ]
   }
 }

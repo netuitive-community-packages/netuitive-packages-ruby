@@ -1,58 +1,60 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "ACE",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Ruby",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "RUBY",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "netuitive.ruby.action_controller.*.total_duration",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "action_controller\\..*Controller\\.total_requests",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "active_record.instantiation",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "active_record.sql.statement",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "action_controller.redirect",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "action_controller.halted_callback",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "ObjectSpace.count_objects\\..*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      }
+    ],
+    "name": "Ruby",
+    "scope": {
+      "elementType": "RUBY"
     },
-    "metrics" : [ {
-      "match" : "netuitive.ruby.action_controller.*.total_duration",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "action_controller\\..*Controller\\.total_requests",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "active_record.instantiation",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "active_record.sql.statement",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "action_controller.redirect",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "action_controller.halted_callback",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "ObjectSpace.count_objects\\..*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    } ]
+    "type": "ACE"
   }
 }
