@@ -1,60 +1,63 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "METRIC_META",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Ruby",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "RUBY",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": ".*",
+        "properties": {
+          "sparseDataStrategy": "ReplaceWithZero"
+        }
+      },
+      {
+        "match": "action_view\\..*",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "active_record\\..*",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "action_controller.halted_callback",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "action_controller.redirect",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "action_controller\\..*\\.total_requests",
+        "properties": {
+          "STATISTIC": "sum"
+        }
+      },
+      {
+        "match": "action_controller\\..*\\.request\\..*",
+        "properties": {
+          "tags": {
+            "unit": "ms"
+          }
+        }
+      },
+      {
+        "match": "netuitive.ruby.action_controller.*.total_duration",
+        "properties": {
+          "tags": {
+            "unit": "ms"
+          }
+        }
+      }
+    ],
+    "name": "Ruby",
+    "scope": {
+      "elementType": "RUBY"
     },
-    "metrics" : [ {
-      "match" : ".*",
-      "properties" : {
-        "sparseDataStrategy" : "ReplaceWithZero"
-      }
-    }, {
-      "match" : "action_view\\..*",
-      "properties" : {
-        "STATISTIC" : "sum"
-      }
-    }, {
-      "match" : "active_record\\..*",
-      "properties" : {
-        "STATISTIC" : "sum"
-      }
-    }, {
-      "match" : "action_controller.halted_callback",
-      "properties" : {
-        "STATISTIC" : "sum"
-      }
-    }, {
-      "match" : "action_controller.redirect",
-      "properties" : {
-        "STATISTIC" : "sum"
-      }
-    }, {
-      "match" : "action_controller\\..*\\.total_requests",
-      "properties" : {
-        "STATISTIC" : "sum"
-      }
-    }, {
-      "match" : "action_controller\\..*\\.request\\..*",
-      "properties" : {
-        "tags" : {
-          "unit" : "ms"
-        }
-      }
-    }, {
-      "match" : "netuitive.ruby.action_controller.*.total_duration",
-      "properties" : {
-        "tags" : {
-          "unit" : "ms"
-        }
-      }
-    } ]
+    "type": "METRIC_META"
   }
 }
