@@ -1,7 +1,7 @@
 ## Release History
 
 ### Version next
-
+* Computed metrics converted to CML
 * Adjusted build to use metricly-cli for validation
 
 ### Version 1.4.0

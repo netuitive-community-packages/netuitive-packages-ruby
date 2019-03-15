@@ -4,8 +4,10 @@
       {
         "match": "netuitive.ruby.action_controller.total_duration",
         "properties": {
-          "expression": "data.sum('action_controller.${1}.*.request.total_duration')",
-          "for": "action_controller.(.*)Controller.total_requests",
+          "capture": "action_controller[.](.*)Controller.total_requests",
+          "expressions": [
+            "sum(action_controller.${1}.*.request.total_duration)"
+          ],
           "fqn": "netuitive.ruby.action_controller.${1}Controller.total_duration",
           "name": "Controller Total Duration"
         }
