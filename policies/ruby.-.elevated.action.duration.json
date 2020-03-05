@@ -24,7 +24,7 @@
     "enabled": true,
     "name": "Ruby - Elevated Action Duration",
     "scope": {
-      "elementType": "Ruby"
+      "elementTypes": ["Ruby"]
     }
   }
 }
